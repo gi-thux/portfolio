@@ -7,10 +7,10 @@ import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 
 public class MailHelper {
-    public static void sendEmail(String message, JavaMailSender javaMailSender){
+    public static void sendEmail(String message, JavaMailSender javaMailSender,String subject,String... to){
         SimpleMailMessage simpleMailMessage =new SimpleMailMessage();
-        simpleMailMessage.setTo("sunnychand01111@gmail.com");
-        simpleMailMessage.setSubject("Mail from the portfolio  webpage");
+        simpleMailMessage.setTo(to);
+        simpleMailMessage.setSubject(subject);
 
         simpleMailMessage.setText(message);
 
