@@ -90,8 +90,7 @@ public class WebController {
         stringBuilder.append(contact.getMessage());
         stringBuilder.append("\n");
 
-
-        MailHelper.sendEmail(stringBuilder.toString(),javaMailSender);
+        MailHelper.sendEmail(stringBuilder.toString(),javaMailSender,"Email from your portfolio webpage","sunnychand01111@gmail.com");
 
 
         return"redirect:";
