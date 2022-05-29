@@ -11,7 +11,6 @@ public class MailHelper {
         SimpleMailMessage simpleMailMessage =new SimpleMailMessage();
         simpleMailMessage.setTo(to);
         simpleMailMessage.setSubject(subject);
-
         simpleMailMessage.setText(message);
 
         try{
