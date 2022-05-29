@@ -92,7 +92,6 @@ public class WebController {
 
         MailHelper.sendEmail(stringBuilder.toString(),javaMailSender,"Email from your portfolio webpage","sunnychand01111@gmail.com");
 
-
         return"redirect:";
     }
 }
